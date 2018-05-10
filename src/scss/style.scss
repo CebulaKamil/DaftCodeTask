@@ -19,10 +19,6 @@ body {
     background-color: rgba($color: $bg-color, $alpha: 0.4);
 }
 
-.display-none {
-    display: none;
-}
-
 /* Navigation - menu */
 ul {
     float: right;
@@ -30,7 +26,10 @@ ul {
 
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
-    color: $font-color;
+}
+
+a.contact:hover {
+    color: black;
 }
 
 .list-item {
@@ -48,6 +47,11 @@ a:link, a:visited, a:hover, a:active {
     text-align: center;
     text-decoration: none;
 }
+
+a.underline, a.contact {
+    color: $font-color;
+}
+
 
 /* Under line effect */
 .underline::after {
@@ -79,6 +83,10 @@ a:link, a:visited, a:hover, a:active {
 .contact-row:hover {
     cursor: pointer;
     background-color: white;
+}
+
+.contact-row:hover a {
+    color: black;
 }
 
 .menu-row {
@@ -194,8 +202,10 @@ a:link, a:visited, a:hover, a:active {
 }
 
 /* ---------- Media Queries ---------- */
-@media only screen and (max-width: 500px) {
-    
+@media only screen and (max-width: 768px) {
+    body {
+        font-family: 200;
+    }
 }
 
 @media only screen and (max-width: 768px) {

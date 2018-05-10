@@ -15,6 +15,8 @@ const displayMenu = function() {
     nav.classList.remove("d-none");
     nav.classList.remove("d-md-block");
     containerBody.style.backgroundColor = "#001820";
+    containerBody.style.width = "100%";
+    containerBody.style.height = "100vh";
     textRow.style.display = "none";
     circleSquareRow.style.display = "none";
     socialMediaText.style.display = "none";
