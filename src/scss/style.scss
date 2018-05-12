@@ -2,7 +2,7 @@
 $font-color: #ffffff;
 $bg-color: #001820;
 
-/* Background */
+/* ---------- Background ---------- */
 body {
     min-height: 100vh;
     background-image: url("../img/bg_image.jpg");
@@ -13,7 +13,7 @@ body {
     font-weight: 600;
 }
 
-.full-screen-container {
+#full-screen-container {
     min-height: 100vh;
     min-width: 100vw;
     background-color: rgba($color: $bg-color, $alpha: 0.4);
@@ -51,7 +51,6 @@ a.contact:hover {
 a.underline, a.contact {
     color: $font-color;
 }
-
 
 /* Under line effect */
 .underline::after {
@@ -115,7 +114,6 @@ a.underline, a.contact {
 /* ---------- Main ---------- */
 /* Text */
 .text {
-    // background-color: green;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5vh;
@@ -123,7 +121,6 @@ a.underline, a.contact {
     text-align: center;
     width: 40%;
 }
-
 
 .bold {
     color: white;
@@ -155,7 +152,6 @@ a.underline, a.contact {
 .social-media-icons {
     color: white;
     text-align: center;
-
 }
 
 .icon {
@@ -188,7 +184,7 @@ a.underline, a.contact {
     margin-right: auto;
     position: absolute;
     bottom: 0;
-    margin-left: -60px;
+    margin-left: -53px;
     left: 50%;
     position: fixed;
 }
@@ -197,17 +193,10 @@ a.underline, a.contact {
     content: "More";
     position: relative;
     top: 30px;
-    right: 25px;
-    
+    right: 25px;  
 }
 
 /* ---------- Media Queries ---------- */
-@media only screen and (max-width: 768px) {
-    body {
-        font-family: 200;
-    }
-}
-
 @media only screen and (max-width: 768px) {
     .svg {
         margin-left: auto;
@@ -219,8 +208,8 @@ a.underline, a.contact {
 
     .circle-square-container {
         padding: 2vh;
-
     }
+
     .text {
         width: 100%;
         font-weight: 100;
@@ -228,5 +217,18 @@ a.underline, a.contact {
 
     .social-media {
         width: 100%;
+    }
+
+    body {
+        font-family: 200;
+    }
+
+    .triangle::after {
+        content: "+";
+        position: relative;
+        top: 15px;
+        right: 8px;
+        font-size: 30px;
+        
     }
 }
