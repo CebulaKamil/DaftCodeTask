@@ -9,25 +9,25 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container-fluid full-screen-container" id="container-body">
-        <div class="mobile-menu">
+    <div class="container-fluid" id="full-screen-container">
         <header class="container" id="header">
             <div class="row menu-row">
                 <img alt="Logo" class="col mr-auto svg" src="img/logo_awesome.svg">
                 <button class="col-1 d-md-none hamburger" id="hamburger"></button>
+                <button class="col-1 hamburger-exit" id="hamburger-exit"></button>
                 <nav class="col-auto d-md-block d-none" id="nav"> 
                         <ul class="row list-menu">
-                            <li class="col-md-auto list-item underline">
-                                <a href="#">Features</a>
+                            <li class="underline col-md-auto list-item">
+                                <a class="underline" href="#">Features</a>
                             </li>
-                            <li class="col-md-auto list-item underline">
-                                <a href="#">Case Studies</a>
+                            <li class="underline col-md-auto list-item">
+                                <a class="underline" href="#">Case Studies</a>
                             </li>
-                            <li class="col-md-auto list-item underline">
-                                <a href="#">About</a>
+                            <li class="underline col-md-auto list-item">
+                                <a class="underline" href="#">About</a>
                             </li>
                             <li class="col-md-auto list-item contact-row">
-                                <a href="#" class="contact">Contact</a>
+                                <a class="contact" href="#">Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -67,12 +67,11 @@
         </main>
         <footer>
             <div class="container">
-                <div class="row triangle-row">
+                <div class="row" id="triangle-row">
                     <div class="triangle"></div>
                 </div>
             </div>
         </footer>
-    </div>
     </div>
     <script src="js/script.js"></script>
 </body>

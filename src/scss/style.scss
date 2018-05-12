@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800');
 $font-color: #ffffff;
 $bg-color: #001820;
 
@@ -111,6 +111,22 @@ a.underline, a.contact {
     right: 10px;   
 }
 
+#hamburger-exit {
+    box-sizing: border-box;
+    background-image: url("../img/iks.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    color: black;
+    background-color: rgba($color: white, $alpha: 0.0);
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;   
+    display: none;
+}
+
 /* ---------- Main ---------- */
 /* Text */
 .text {
@@ -184,7 +200,7 @@ a.underline, a.contact {
     margin-right: auto;
     position: absolute;
     bottom: 0;
-    margin-left: -53px;
+    margin-left: -51px;
     left: 50%;
     position: fixed;
 }
@@ -228,7 +244,20 @@ a.underline, a.contact {
         position: relative;
         top: 15px;
         right: 8px;
-        font-size: 30px;
-        
+        font-size: 30px;  
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 200;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
     }
 }
