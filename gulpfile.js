@@ -18,7 +18,7 @@ const config = {
   src: 'src/',
   cssin: 'src/css/**/*.css',
   jsin: 'src/js/**/*.js',
-  imgin: 'src/img/**/*.{jpg,jpeg,png,gif}',
+  imgin: 'src/img/**/*.{jpg,jpeg,png,gif,svg,ico}',
   htmlin: 'src/*.html',
   scssin: 'src/scss/**/*.scss',
   cssout: 'dist/css/',

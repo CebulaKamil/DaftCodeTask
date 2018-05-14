@@ -56,18 +56,20 @@ a.underline, a.contact {
 .underline::after {
     content: "";
     position: absolute;
-    left: 0;
-    right: 100%;
+    right: 0;
+    width: 0;
     background: white;
     height: 4px;
     bottom: -5px;
-    transition-property: left right;
+    transition-property: width;
     transition-duration: 0.5s;
     transition-timing-function: ease-out;
 }
 
 .underline:hover::after {
-    right: 0;
+    left: 0;
+    right: auto;
+    width: 100%;
 }
 
 .list-item:hover {
@@ -196,20 +198,24 @@ a.underline, a.contact {
     border-width: 0px 60px 60px 60px;
     height: 0px;
     width: 0px;
+}
+
+#triangle-row {
     margin-left: auto;
     margin-right: auto;
-    position: absolute;
+    justify-content: center;
     bottom: 0;
-    margin-left: -51px;
-    left: 50%;
     position: fixed;
+    left: 50%;
+    right: 50%;
+    margin-left: 8px;
 }
 
 .triangle::after {
     content: "More";
     position: relative;
     top: 30px;
-    right: 25px;  
+    right: 22px;  
 }
 
 /* ---------- Media Queries ---------- */

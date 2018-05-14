@@ -33,8 +33,7 @@ const displayMenu = function() {
 
 const hideMenu = function() {
     hamburgerExit.style.display = "none";
-    hamburger.style.display = "";
-    hamburger.style.backgroundImage = "url('../img/hamburger_menu.svg')";
+    hamburger.style.display = "block";
     nav.classList.add("d-none");
     nav.classList.add("d-md-block");
     containerBody.style.backgroundColor = "";
